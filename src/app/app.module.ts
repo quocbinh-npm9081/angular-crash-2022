@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/Header/Header.component';
 import { CardComponent } from './Components/Card/Card.component';
 import { CounterComponent } from './Components/Counter/Counter.component';
+import { WishMessageComponent } from './Components/WishMessage/WishMessage.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CardComponent,
-    CounterComponent
+    CounterComponent,
+    WishMessageComponent
   ],
   imports: [
     BrowserModule,
