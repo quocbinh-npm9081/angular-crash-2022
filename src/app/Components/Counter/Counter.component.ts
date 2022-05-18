@@ -9,7 +9,21 @@ export class CounterComponent implements OnInit {
 
   public title: string = "Coutner Component"
 
-  constructor() { }
+  public count: number = 10;
+
+  public decrement(): void {
+    this.count++;
+  }
+
+  public increment(): void {
+    this.count--;
+  }
+
+
+
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

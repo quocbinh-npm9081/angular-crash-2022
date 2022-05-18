@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-
   // PROP BINDING
 
   public title: string = "card component";
