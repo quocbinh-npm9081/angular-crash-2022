@@ -1,3 +1,38 @@
 <h3 class="text-center text-dark">
     Shopping Cart
 </h3>
+<table class="table table-striped  table-hover">
+    <thead class="bg-secondary text-white">
+        <tr>
+            <th class="col">Product Id</th>
+            <th class="col">Name</th>
+            <th class="col">Image</th>
+            <th class="col">Price</th>
+            <th class="col">Quanlity</th>
+            <th class="col">Total</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pr of products">
+            <td>{{pr.pId}}</td>
+            <td>{{pr.name}}</td>
+            <td>
+                <img [src]="pr.imgage" alt="anh san pham" width="50px">
+            </td>
+            <td>{{pr.price}}</td>
+            <td>
+                <i class="fa-solid fa-circle-minus " (click)="onHandleChangeQty( pr.pId, -1)"></i>
+                <span>
+                    {{pr.qty}}
+                  </span>
+                <i class="fa-solid fa-circle-plus" (click)="onHandleChangeQty( pr.pId,1)"></i>
+            </td>
+            <td>$ {{pr.qty * pr.price}} </td>
+
+
+
+
+        </tr>
+    </tbody>
+</table>
