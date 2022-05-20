@@ -1,0 +1,12 @@
+<form>
+    <h4 class="text-center p-2">
+        Amount Range
+    </h4>
+    <div class="mb-3">
+        <label for="customRange1" class="form-label">Example range</label>
+        <input type="range" name="amount" [(ngModel)]="amount" class="form-range" id="customRange1" [value]="amount" min="1000" max="5000" step="10">
+        <div>{{amount | currency}}</div>
+    </div>
+
+
+</form>

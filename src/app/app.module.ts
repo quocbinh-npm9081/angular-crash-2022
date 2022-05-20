@@ -12,6 +12,7 @@ import { ProductItemComponent } from './Components/ProductItem/ProductItem.compo
 import { ShoppingCartComponent } from './Components/ShoppingCart/ShoppingCart.component';
 import { OnChangeEventComponent } from './Components/OnChangeEvent/OnChangeEvent.component';
 import { ToggleShowPasswordComponent } from './Components/ToggleShowPassword/ToggleShowPassword.component';
+import { AmountRangeComponent } from './Components/AmountRange/AmountRange.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { ToggleShowPasswordComponent } from './Components/ToggleShowPassword/Tog
     ProductItemComponent,
     ShoppingCartComponent,
     OnChangeEventComponent,
-    ToggleShowPasswordComponent
+    ToggleShowPasswordComponent,
+    AmountRangeComponent
   ],
   imports: [
     BrowserModule,
