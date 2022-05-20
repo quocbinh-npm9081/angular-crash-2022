@@ -1,0 +1,17 @@
+<div class="card shadow-sm p-3 mb-5 bg-body">
+    <h5 class="text-center text-dark mt-5 text-uppercase ">
+        Two way binding with onChange Event
+    </h5>
+    <form class="m-5">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">User Name</label>
+            <!-- <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" (input)="onHandleChange($event)">           -->
+            <!-- chi binding voi ngModel khi add FormModule -->
+            <input type="text" name="userName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="userName">
+
+            <label for="exampleInputEmail1" class="form-label">onChangeEvent email</label>
+            <input type="text" value={{userName}} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+        </div>
+    </form>
+</div>

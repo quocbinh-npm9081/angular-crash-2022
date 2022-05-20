@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,8 @@ import { CounterComponent } from './Components/Counter/Counter.component';
 import { WishMessageComponent } from './Components/WishMessage/WishMessage.component';
 import { ProductItemComponent } from './Components/ProductItem/ProductItem.component';
 import { ShoppingCartComponent } from './Components/ShoppingCart/ShoppingCart.component';
+import { OnChangeEventComponent } from './Components/OnChangeEvent/OnChangeEvent.component';
+import { ToggleShowPasswordComponent } from './Components/ToggleShowPassword/ToggleShowPassword.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,11 +20,14 @@ import { ShoppingCartComponent } from './Components/ShoppingCart/ShoppingCart.co
     CounterComponent,
     WishMessageComponent,
     ProductItemComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    OnChangeEventComponent,
+    ToggleShowPasswordComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
