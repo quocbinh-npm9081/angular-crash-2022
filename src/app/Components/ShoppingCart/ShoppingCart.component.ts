@@ -51,7 +51,13 @@ export class ShoppingCartComponent implements OnInit {
   ];
 
 
-
+  public calcGrandTotal(): number {
+    let grandTotal: number = 0;
+    this.products.forEach(product => {
+      grandTotal += (product.price * product.qty);
+    });
+    return grandTotal;
+  };
 
   constructor() { }
 
@@ -60,10 +66,22 @@ export class ShoppingCartComponent implements OnInit {
   public onHandleChangeQty(id: string, qty: number): void {
     this.products = this.products.map((product: IProduct) => {
       if (product.pId == id) {
-        return {
-          ...product,
-          qty: product.qty + qty
+        if (product.qty === 0) {
+          return {
+            ...product,
+            qty: 0
+          }
+
+        } else {
+
+          return {
+            ...product,
+            qty: product.qty + qty
+          }
         }
+
+
+
       }
       // console.log(product);
       return product;

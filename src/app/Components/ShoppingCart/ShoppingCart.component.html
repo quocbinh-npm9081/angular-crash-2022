@@ -20,7 +20,7 @@
             <td>
                 <img [src]="pr.imgage" alt="anh san pham" width="50px">
             </td>
-            <td>{{pr.price}}</td>
+            <td>{{pr.price | currency }}</td>
             <td>
                 <i class="fa-solid fa-circle-minus " (click)="onHandleChangeQty( pr.pId, -1)"></i>
                 <span>
@@ -28,11 +28,15 @@
                   </span>
                 <i class="fa-solid fa-circle-plus" (click)="onHandleChangeQty( pr.pId,1)"></i>
             </td>
-            <td>$ {{pr.qty * pr.price}} </td>
-
-
-
-
+            <td>$ {{pr.qty * pr.price | currency}} </td>
+        </tr>
+        <tr class="bg-success">
+            <td colspan="5" class="text-white text-end">
+                Grand Total:
+            </td>
+            <td>
+                {{calcGrandTotal() | currency}}
+            </td>
         </tr>
     </tbody>
 </table>
