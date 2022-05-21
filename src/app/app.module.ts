@@ -13,6 +13,7 @@ import { ShoppingCartComponent } from './Components/ShoppingCart/ShoppingCart.co
 import { OnChangeEventComponent } from './Components/OnChangeEvent/OnChangeEvent.component';
 import { ToggleShowPasswordComponent } from './Components/ToggleShowPassword/ToggleShowPassword.component';
 import { AmountRangeComponent } from './Components/AmountRange/AmountRange.component';
+import { ThemeComponent } from './Components/Theme/Theme.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { AmountRangeComponent } from './Components/AmountRange/AmountRange.compo
     ShoppingCartComponent,
     OnChangeEventComponent,
     ToggleShowPasswordComponent,
-    AmountRangeComponent
+    AmountRangeComponent,
+    ThemeComponent
   ],
   imports: [
     BrowserModule,
