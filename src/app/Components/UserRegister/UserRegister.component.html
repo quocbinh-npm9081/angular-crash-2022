@@ -1,0 +1,32 @@
+<pre>
+ {{user | json}}
+</pre>
+<form>
+    <h4 class="text-center">Regiter</h4>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" name="email" [(ngModel)]="user.email" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput2">Password</label>
+        <input type="password" class="form-control" name="password" [(ngModel)]="user.password" id="exampleFormControlInput2" placeholder="******">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Gender: </label>
+        <select class="form-control" name="gender" [(ngModel)]="user.gender" id="exampleFormControlSelect1">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+        </select>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" name="check" [(ngModel)]="user.check" id="check1">
+        <label class="form-check-label" for="check1">Check me out</label>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Bio</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" name="bio" [(ngModel)]="user.bio" rows="3"></textarea>
+    </div>
+    <button type="button" class="btn btn-info mt-2">submit</button>
+
+</form>

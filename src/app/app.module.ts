@@ -14,6 +14,7 @@ import { OnChangeEventComponent } from './Components/OnChangeEvent/OnChangeEvent
 import { ToggleShowPasswordComponent } from './Components/ToggleShowPassword/ToggleShowPassword.component';
 import { AmountRangeComponent } from './Components/AmountRange/AmountRange.component';
 import { ThemeComponent } from './Components/Theme/Theme.component';
+import { UserRegisterComponent } from './Components/UserRegister/UserRegister.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { ThemeComponent } from './Components/Theme/Theme.component';
     OnChangeEventComponent,
     ToggleShowPasswordComponent,
     AmountRangeComponent,
-    ThemeComponent
+    ThemeComponent,
+    UserRegisterComponent
   ],
   imports: [
     BrowserModule,
