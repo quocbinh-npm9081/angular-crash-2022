@@ -1,7 +1,7 @@
 <pre>
  {{user | json}}
 </pre>
-<form>
+<form (submit)="onHandleSubmit()">
     <h4 class="text-center">Regiter</h4>
     <div class="form-group">
         <label for="exampleFormControlInput1">Email address</label>
@@ -27,6 +27,6 @@
         <label for="exampleFormControlTextarea1">Bio</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" name="bio" [(ngModel)]="user.bio" rows="3"></textarea>
     </div>
-    <button type="button" class="btn btn-info mt-2">submit</button>
+    <button type="submit" class="btn btn-info mt-2">submit</button>
 
 </form>

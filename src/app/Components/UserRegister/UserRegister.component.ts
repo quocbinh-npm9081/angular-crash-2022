@@ -28,6 +28,10 @@ export class UserRegisterComponent implements OnInit {
     bio: ''
   }
 
+  public onHandleSubmit(): void {
+    alert(JSON.stringify(this.user));
+  }
+
   constructor() { }
 
   ngOnInit() {
