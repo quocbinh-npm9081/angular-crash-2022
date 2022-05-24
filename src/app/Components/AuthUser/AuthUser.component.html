@@ -1,0 +1,28 @@
+<div class="m-auto">
+    <h4 class="text-center">
+        Angular with structural Directives( *ngIf)
+    </h4>
+    <div class="mt-3">
+        <div class="container">
+            <div class="row">
+
+                <div class="card shadow-lg">
+                    <div class="card-body text-center">
+                        <h1 *ngIf="isLogged">
+                            wellcome Binh
+                        </h1>
+                        <h1 *ngIf="!isLogged">
+                            wellcome
+                        </h1>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button (click)="onHandleClickLogin()" type="button" class="btn btn-primary me-2">login</button>
+                            <button (click)="onHandleClickLogout()" type="button" class="btn btn-secondary">logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
