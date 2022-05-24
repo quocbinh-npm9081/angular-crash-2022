@@ -16,6 +16,8 @@ import { AmountRangeComponent } from './Components/AmountRange/AmountRange.compo
 import { ThemeComponent } from './Components/Theme/Theme.component';
 import { UserRegisterComponent } from './Components/UserRegister/UserRegister.component';
 import { AuthUserComponent } from './Components/AuthUser/AuthUser.component';
+import { GirlsComponent } from './Components/childAndFatherComponent/Girls/Girls.component';
+import { GirlComponent } from './Components/childAndFatherComponent/Girl/Girl.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,9 @@ import { AuthUserComponent } from './Components/AuthUser/AuthUser.component';
     AmountRangeComponent,
     ThemeComponent,
     UserRegisterComponent,
-    AuthUserComponent
+    AuthUserComponent,
+    GirlsComponent,
+    GirlComponent
   ],
   imports: [
     BrowserModule,

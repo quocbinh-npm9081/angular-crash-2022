@@ -1,0 +1,12 @@
+<!-- <pre>
+  {{girl | json}}
+</pre> -->
+
+<div class="card " *ngIf="girl">
+    <img src={{girl.image}} class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{girl.name}}</h5>
+        <p class="card-text">{{girl.age}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
