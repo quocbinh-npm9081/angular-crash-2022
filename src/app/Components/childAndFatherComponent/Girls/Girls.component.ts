@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 interface IGirl {
   pId: string,
   name: string,
@@ -45,6 +46,7 @@ export class GirlsComponent implements OnInit {
       age: 29
     }
   ];
+
   constructor() { }
 
   ngOnInit() {

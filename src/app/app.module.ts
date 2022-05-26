@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +21,9 @@ import { AuthUserComponent } from './Components/AuthUser/AuthUser.component';
 import { GirlsComponent } from './Components/childAndFatherComponent/Girls/Girls.component';
 import { GirlComponent } from './Components/childAndFatherComponent/Girl/Girl.component';
 import { PipesComponent } from './Components/Pipes/Pipes.component';
+import { UserItemComponent } from './Components/user/UserItem/UserItem.component';
+import { UserListComponent } from './Components/user/UserList/UserList.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,12 +41,16 @@ import { PipesComponent } from './Components/Pipes/Pipes.component';
     AuthUserComponent,
     GirlsComponent,
     GirlComponent,
-    PipesComponent
+    PipesComponent,
+    UserItemComponent,
+    UserListComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

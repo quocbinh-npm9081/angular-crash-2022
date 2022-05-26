@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeSevService } from 'src/app/Sevices/employeeSev.service';
 import { IEmployee } from '../../Models/Employee';
 @Component({
   selector: 'app-Pipes',
@@ -7,17 +8,14 @@ import { IEmployee } from '../../Models/Employee';
 })
 export class PipesComponent implements OnInit {
 
-  public employee: IEmployee = {
-    idE: "P01",
-    name: "CAO QUOC BINH",
-    age: 21,
-    designation: "Leader",
-    dateJoin: new Date(),
-    salary: 1400000
+  public employee: IEmployee = {} as IEmployee;
+
+
+
+  constructor(private employeeSev: EmployeeSevService) {
+    this.employee = this.employeeSev.getEmployee();
+
   }
-
-
-  constructor() { }
 
   ngOnInit() {
   }
