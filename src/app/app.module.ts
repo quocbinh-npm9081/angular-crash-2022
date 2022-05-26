@@ -18,6 +18,7 @@ import { UserRegisterComponent } from './Components/UserRegister/UserRegister.co
 import { AuthUserComponent } from './Components/AuthUser/AuthUser.component';
 import { GirlsComponent } from './Components/childAndFatherComponent/Girls/Girls.component';
 import { GirlComponent } from './Components/childAndFatherComponent/Girl/Girl.component';
+import { PipesComponent } from './Components/Pipes/Pipes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { GirlComponent } from './Components/childAndFatherComponent/Girl/Girl.co
     UserRegisterComponent,
     AuthUserComponent,
     GirlsComponent,
-    GirlComponent
+    GirlComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
